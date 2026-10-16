@@ -18,14 +18,19 @@ Get the latest build from **[Releases](https://github.com/AnhLong-071/DubPlay/re
 
 > Alternative: run `powershell -ExecutionPolicy Bypass -File install-windows.ps1` in PowerShell.
 
-### macOS
+### macOS (standard app style — no Terminal, no Homebrew)
 
-1. Download **`DubPlay-macOS-*.zip`** and extract it
-2. **Double-click `Cai-dat-DubPlay.command`** — it prints step-by-step progress and installs [mpv](https://mpv.io) via [Homebrew](https://brew.sh) if missing
-3. Done: run `mpv` in Terminal, or drag a video onto `DubPlay.command`
+1. Download the right build for your Mac:
+   - **`DubPlay-macOS-AppleSilicon-*.zip`** — Macs from 2021 onwards (Apple M1/M2/M3/M4 chips)
+   - **`DubPlay-macOS-Intel-*.zip`** — older Intel Macs
+   - Not sure? Apple menu → **About This Mac**: "Apple M…" = Apple Silicon, otherwise Intel
+2. Extract and **drag `DubPlay.app` into your Applications folder**
+3. First launch: **right-click DubPlay.app → Open → Open** (a one-time confirmation — the app is unsigned, exactly how [mpv](https://mpv.io) itself ships)
+4. Open DubPlay from Launchpad — the video browser appears, pick a video and enjoy
 
-> First launch may trigger a Gatekeeper prompt (unsigned app):
-> **right-click the file → Open → Open** (one time only).
+Then: put `dub_audio*.wav` + an `.srt` next to the video for auto-attach; `a` audio, `s` subtitles, `o` open another video.
+
+> Terminal folks: the Homebrew route still exists — clone the repo and run `bash install-mac.sh`.
 
 ## ✨ Features
 

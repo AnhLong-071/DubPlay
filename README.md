@@ -19,15 +19,19 @@ Tải bản mới nhất tại **[Releases](https://github.com/AnhLong-071/DubPl
 > Cách khác nếu thích: mở PowerShell trong thư mục vừa giải nén và chạy
 > `powershell -ExecutionPolicy Bypass -File install-windows.ps1`
 
-### macOS
+### macOS (kiểu app chuẩn — không cần Terminal, không cần Homebrew)
 
-1. Tải **`DubPlay-macOS-*.zip`** và giải nén
-2. **Double-click `Cai-dat-DubPlay.command`** — script tự chạy, in tiến độ từng bước (tự cài [mpv](https://mpv.io) qua [Homebrew](https://brew.sh) nếu chưa có)
-3. Xong: chạy lệnh `mpv` trong Terminal, hoặc kéo video thả vào `DubPlay.command`
+1. Tải đúng bản cho máy:
+   - **`DubPlay-macOS-AppleSilicon-*.zip`** — Mac từ 2021 trở đi (chip Apple M1/M2/M3/M4)
+   - **`DubPlay-macOS-Intel-*.zip`** — Mac cũ dùng chip Intel
+   - Không chắc? Bấm logo Apple → **Giới thiệu về Mac này**: thấy "Apple M..." = Apple Silicon, không thấy = Intel
+2. Giải nén → **kéo `DubPlay.app` vào thư mục Applications**
+3. Lần đầu mở: **chuột phải DubPlay.app → Open → Open** (xác nhận 1 lần duy nhất — app chưa ký số, chính [mpv](https://mpv.io) gốc cũng phát hành kiểu này)
+4. Mở DubPlay từ Launchpad/Applications → trình duyệt video tự hiện → chọn video xem
 
-> Lần đầu double-click, macOS có thể hỏi xác nhận vì app chưa ký số:
-> **chuột phải file → Open → Open** (chỉ cần 1 lần). Nếu chưa có Homebrew,
-> script sẽ chỉ link https://brew.sh — cài xong chạy lại `Cai-dat-DubPlay.command`.
+Sau đó: đặt `dub_audio*.wav` + `.srt` cạnh video là tự nhận; trong player bấm `a` đổi audio, `s` phụ đề, `o` mở video khác.
+
+> Ai quen dòng lệnh: vẫn có cách cài qua Homebrew — clone repo và chạy `bash install-mac.sh`.
 
 ## ✨ Tính năng
 
