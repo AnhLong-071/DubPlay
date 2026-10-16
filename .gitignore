@@ -1,0 +1,6 @@
+# Sản phẩm build (tạo bằng assemble.ps1, chứa binary mpv — không commit)
+DubPlay.zip
+bundle/
+
+# Log
+*.log
