@@ -1,6 +1,11 @@
 # Sản phẩm build (tạo bằng assemble.ps1, chứa binary mpv — không commit)
 DubPlay.zip
+DubPlay-Windows-*.zip
+DubPlay-macOS-*.zip
 bundle/
+
+# Notes phát hành tạm thời (publish.ps1 dùng rồi bỏ)
+release-notes-*.md
 
 # Log
 *.log

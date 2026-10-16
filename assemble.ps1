@@ -27,6 +27,8 @@ foreach ($junk in @('mpv', 'doc', 'installer', 'uninstall.exe', 'unins000.dat', 
 # Phần custom của DubPlay
 Copy-Item (Join-Path $root 'portable_config') $stage -Recurse
 Copy-Item (Join-Path $root 'DubPlay.bat') $stage
+# Cai-dat-DubPlay.bat: điểm vào double-click cho người không chuyên
+Copy-Item (Join-Path $root 'Cai-dat-DubPlay.bat') $stage
 # Nhãn thương hiệu: mpv.exe -> DubPlay.exe (mpv không quan tâm tên file exe).
 # Bỏ mpv.com (wrapper console — người dùng cuối không cần).
 Rename-Item (Join-Path $stage 'mpv.exe') 'DubPlay.exe'

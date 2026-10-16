@@ -13,21 +13,19 @@ Get the latest build from **[Releases](https://github.com/AnhLong-071/DubPlay/re
 ### Windows (no admin rights needed)
 
 1. Download **`DubPlay-Windows-*.zip`** and extract it
-2. Right-click `install-windows.ps1` → **Run with PowerShell** (or run in PowerShell from the extracted folder):
-   ```powershell
-   powershell -ExecutionPolicy Bypass -File install-windows.ps1
-   ```
-3. Done: right-click any video → **Open with → DubPlay**, plus a **DubPlay** shortcut in the Start Menu
+2. **Double-click `Cai-dat-DubPlay.bat`** — that's it (registers Open with + Start Menu)
+3. Right-click any video → **Open with → DubPlay**, plus a **DubPlay** shortcut in the Start Menu
+
+> Alternative: run `powershell -ExecutionPolicy Bypass -File install-windows.ps1` in PowerShell.
 
 ### macOS
 
 1. Download **`DubPlay-macOS-*.zip`** and extract it
-2. Open Terminal in the extracted folder and run:
-   ```bash
-   bash install-mac.sh
-   ```
-   (the script installs [mpv](https://mpv.io) via [Homebrew](https://brew.sh) if missing, then places DubPlay's config)
+2. **Double-click `Cai-dat-DubPlay.command`** — it prints step-by-step progress and installs [mpv](https://mpv.io) via [Homebrew](https://brew.sh) if missing
 3. Done: run `mpv` in Terminal, or drag a video onto `DubPlay.command`
+
+> First launch may trigger a Gatekeeper prompt (unsigned app):
+> **right-click the file → Open → Open** (one time only).
 
 ## ✨ Features
 

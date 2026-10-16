@@ -13,21 +13,21 @@ Tải bản mới nhất tại **[Releases](https://github.com/AnhLong-071/DubPl
 ### Windows (không cần quyền admin)
 
 1. Tải **`DubPlay-Windows-*.zip`** và giải nén
-2. Chuột phải `install-windows.ps1` → **Run with PowerShell** (hoặc mở PowerShell trong thư mục vừa giải nén và chạy):
-   ```powershell
-   powershell -ExecutionPolicy Bypass -File install-windows.ps1
-   ```
-3. Xong: right-click video → **Open with → DubPlay**, và có shortcut **DubPlay** trong Start Menu
+2. **Double-click `Cai-dat-DubPlay.bat`** — xong (tự đăng ký Open with + Start Menu)
+3. Right-click video → **Open with → DubPlay**, và có shortcut **DubPlay** trong Start Menu
+
+> Cách khác nếu thích: mở PowerShell trong thư mục vừa giải nén và chạy
+> `powershell -ExecutionPolicy Bypass -File install-windows.ps1`
 
 ### macOS
 
 1. Tải **`DubPlay-macOS-*.zip`** và giải nén
-2. Mở Terminal trong thư mục vừa giải nén và chạy:
-   ```bash
-   bash install-mac.sh
-   ```
-   (script sẽ cài [mpv](https://mpv.io) qua [Homebrew](https://brew.sh) nếu chưa có, rồi đặt cấu hình DubPlay vào chỗ chuẩn)
+2. **Double-click `Cai-dat-DubPlay.command`** — script tự chạy, in tiến độ từng bước (tự cài [mpv](https://mpv.io) qua [Homebrew](https://brew.sh) nếu chưa có)
 3. Xong: chạy lệnh `mpv` trong Terminal, hoặc kéo video thả vào `DubPlay.command`
+
+> Lần đầu double-click, macOS có thể hỏi xác nhận vì app chưa ký số:
+> **chuột phải file → Open → Open** (chỉ cần 1 lần). Nếu chưa có Homebrew,
+> script sẽ chỉ link https://brew.sh — cài xong chạy lại `Cai-dat-DubPlay.command`.
 
 ## ✨ Tính năng
 
